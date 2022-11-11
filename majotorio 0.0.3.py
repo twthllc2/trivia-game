@@ -283,6 +283,26 @@ def historia3_2_fm():
     print("De esta forma, Tonaro no puede ni plantearse volver a su activa vida, viviendo en una tortura")
     time.sleep(time_duration)
 
+def historia4_1():
+    print("Matane es una joven delicada que lleva una vida retirada en el campo")
+    time.sleep(time_duration)
+    print("<<Ojalá poder tener una vida más normal>>, piensa ella.")
+    time.sleep(time_duration)
+    print("Instantáneamente, la brujita Alva aparece en frente de la chica.")
+    time.sleep(time_duration)
+    print("Viendo que no tiene nada que perder, acepta la propuesta de la bruja.")
+    time.sleep(time_duration)
+
+def historia4_1_fb():
+    print("Matane es una joven delicada que lleva una vida retirada en el campo")
+    time.sleep(time_duration)
+    print("<<Ojalá poder tener una vida más normal>>, piensa ella.")
+    time.sleep(time_duration)
+    print("Instantáneamente, la brujita Alva aparece en frente de la chica.")
+    time.sleep(time_duration)
+    print("Viendo que no tiene nada que perder, acepta la propuesta de la bruja.")
+    time.sleep(time_duration)
+
 pantalla_titulo()
 historia1()
 
