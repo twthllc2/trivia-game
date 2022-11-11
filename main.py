@@ -96,7 +96,28 @@ pil_delarosa = str("2. De La Rosa")
 pil_rodriguez = str("3. Rodríguez")
 pil_gene = str("4. Gené")
 lista_pil = [pil_alonso, pil_delarosa, pil_rodriguez, pil_gene]
+pol_rubalcaba = str("1. Rubalcaba")
+pol_rajoy = str("3. Rajoy")
+pol_iglesias = str("2. Iglesias")
+pol_rivera = str("4. Rivera")
+lista_pol = [pol_rubalcaba, pol_iglesias, pol_rajoy, pol_rivera]
+frase_nollegaaviejo = str("1. No llega a viejo")
+frase_caminalento = str("2. Camina lento")
+frase_lepillaelconejo = str("3. Le pilla el conejo")
+frase_lequitanelpellejo = str("4. Le quitan el pellejo")
+lista_frase = [frase_nollegaaviejo, frase_caminalento, frase_lepillaelconejo, frase_lequitanelpellejo]
+prov_50 = str("3. 50")
+prov_22 = str("1. 22")
+prov_62 = str("2. 62")
+prov_40 = str("4. 40")
+lista_prov = [prov_22, prov_62, prov_50, prov_40]
 
+#opciones de preguntas todavía no utilizadas.
+marc_scottex = str("1. Scottex")
+marc_hp = str("2. HP")
+marc_lenovo = str("3. Lenovo")
+marc_sexoconvaporeon = str("4. Sexo con vaporeon")
+lista_marc = [marc_scottex, marc_hp, marc_lenovo, marc_sexoconvaporeon]
 
 #En esta zona se experimenta para conseguir el sistema de aciertos
 a = 0
@@ -104,6 +125,12 @@ b = 0
 resp_cor = 0
 resp_incor = 0
 respuesta_correcta = a+1
+
+def reset_ab():
+    a = 0
+    (a)
+    b = 0
+    (b)
 
 #Aquí se encuentran las distintas funciones y cosas varias
 def ver_puntuacion():
@@ -117,7 +144,7 @@ def esperando_resultado():
     time.sleep(time_duration_2)
 
 def pantalla_titulo():
-    boton2 = str(input("M A J O T O R I O"))
+    boton2 = str(input("M A J O T O R I O  v 0.0.3"))
     time.sleep(time_duration_menu)
     print("1. Jugar")
     time.sleep(time_duration_menu)
@@ -143,6 +170,16 @@ def game_over():
     print("Fin del juego")
     time.sleep(time_duration_fin)
 
+def pantalla_creditos():
+    print("Majotorio")
+    time.sleep(time_duration)
+    print("Desarrollado por Simone Moscato y Ayoub el Assri (creo que así se escribe)")
+    time.sleep(time_duration)
+    print("Inspirado en el videojuego Majotori de Alva Majo")
+    time.sleep(time_duration)
+    print("Creado con PyCharmsqebff")
+    time.sleep(time_duration)
+
 def historia1():
     print("Érase una vez un ingeniero llamado Ramero")
     time.sleep(time_duration)
@@ -157,6 +194,7 @@ def historia1():
     print("La brujita le propone jugar a un juego de trivia, en el que dependiendo de sus aciertos algo bueno o malo le ocurrirá")
     time.sleep(time_duration)
     print("Ramero, lleno de confianza, decide aceptar la propuesta de Alva")
+    time.sleep(time_duration)
 
 def historia2_mal():
     print("Al improviso, la pequeña bruja desaparece, y nada parece cambiar en la vida de Ramero")
@@ -421,6 +459,9 @@ else:
 
 
 #Aquí empieza la segunda tanda de preguntas
+a = 0
+b = 0
+
 print(lista_pk)
 respuesta_juego11 = str(input("¿Cuál de estos pokémons es de tipo agua?: "))
 if respuesta_juego11 == ("1"):
@@ -447,6 +488,7 @@ else:
     time.sleep(time_duration)
     print("La respuesta correcta es " + (cic_nibali))
     b = b + 1
+    print(siguiente_preg)
 
 print(lista_len)
 respuesta_juego13 = str(input("¿Cuál es el lenguaje empleado para crear este juego?: "))
@@ -460,6 +502,7 @@ else:
     time.sleep(time_duration)
     print("La respuesta correcta es " + (len_python))
     b = b + 1
+    print(siguiente_preg)
 
 print(lista_mc)
 respuesta_juego14 = str(input("¿Cuál de estos raperos es el autor de Lose Yourself?: "))
@@ -473,6 +516,7 @@ else:
     time.sleep(time_duration)
     print("La respuesta correcta es " + (mc_eminem))
     b = b + 1
+    print(siguiente_preg)
 
 print(lista_ano)
 respuesta_juego15 = str(input("¿En qué año se dio la revolución francesa?: "))
@@ -486,6 +530,7 @@ else:
     time.sleep(time_duration)
     print("La respuesta correcta es " + (ano_1789))
     b = b + 1
+    print(siguiente_preg)
 
 print(lista_namae)
 respuesta_juego16 = str(input("¿Cómo se apellida el protagonista de la serie Metástasis?: "))
@@ -499,9 +544,10 @@ else:
     time.sleep(time_duration)
     print("La respuesta correcta es " + (namae_blanco))
     b = b + 1
+    print(siguiente_preg)
 
 print(lista_pil)
-respuesta_juego17 = str(input("¿Qué piloto español tiene el récord en el circuito de Bahrain?: "))
+respuesta_juego17 = str(input("¿Qué piloto español de F1 tiene el récord de vuelta en el GP de Baréin?: "))
 if respuesta_juego17 == ("2"):
     print(enhorabuena)
     time.sleep(time_duration)
@@ -512,11 +558,54 @@ else:
     time.sleep(time_duration)
     print("La respuesta correcta es " + (pil_delarosa))
     b = b + 1
+    print(siguiente_preg)
+
+print(lista_pol)
+respuesta_juego18 = str(input("¿Cuál de estos apellidos pertenece a un ex-presidente español?: "))
+if respuesta_juego18 == ("3"):
+    print(enhorabuena)
+    time.sleep(time_duration)
+    print(siguiente_preg)
+    a = a + 1
+else:
+    print(respuesta_inc)
+    time.sleep(time_duration)
+    print("La respuesta correcta es " + (pol_rajoy))
+    b = b + 1
+    print(siguiente_preg)
+
+print(lista_frase)
+respuesta_juego19 = str(input("¿Cómo acaba el dicho <Quién no sigue el consejo...>?: "))
+if respuesta_juego19 == ("1"):
+    print(enhorabuena)
+    time.sleep(time_duration)
+    print(siguiente_preg)
+    a = a + 1
+else:
+    print(respuesta_inc)
+    time.sleep(time_duration)
+    print("La respuesta correcta es " + (frase_nollegaaviejo))
+    b = b + 1
+    print(siguiente_preg)
+
+print(lista_prov)
+respuesta_juego20 = str(input("¿Cuántas provincias tiene España?: "))
+if respuesta_juego20 == ("3"):
+    print(enhorabuena)
+    time.sleep(time_duration)
+    print(siguiente_preg)
+    a = a + 1
+else:
+    print(respuesta_inc)
+    time.sleep(time_duration)
+    print("La respuesta correcta es " + (prov_50))
+    b = b + 1
+    print(siguiente_preg)
 
 ver_puntuacion()
 esperando_resultado()
 
-if seleccion1 = ("1"):
+if seleccion1 == ("1"):
     if a >= b:
         historia3_1_fb()
     else:
@@ -527,5 +616,5 @@ else:
     else:
         historia3_2_fm()
 
-Majotori 0.0.3.py
-Mostrando Majotori 0.0.3.py.
+pantalla_creditos()
+game_over()
