@@ -414,7 +414,7 @@ else:
 ver_puntuacion()
 esperando_resultado()
 
-if seleccion1 = ("1"):
+if seleccion1 == ("1"):
     if a >= b:
         historia3_1_fb()
     else:
@@ -424,6 +424,3 @@ else:
         historia3_2_fb()
     else:
         historia3_2_fm()
-
-Majotori 0.0.3.py
-Mostrando Majotori 0.0.3.py.
