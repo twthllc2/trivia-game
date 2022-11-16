@@ -112,13 +112,6 @@ prov_62 = str("2. 62")
 prov_40 = str("4. 40")
 lista_prov = [prov_22, prov_62, prov_50, prov_40]
 
-#opciones de preguntas todavía no utilizadas.
-marc_scottex = str("1. Scottex")
-marc_hp = str("2. HP")
-marc_lenovo = str("3. Lenovo")
-marc_sexoconvaporeon = str("4. Sexo con vaporeon")
-lista_marc = [marc_scottex, marc_hp, marc_lenovo, marc_sexoconvaporeon]
-
 #En esta zona se experimenta para conseguir el sistema de aciertos
 a = 0
 b = 0
@@ -281,26 +274,6 @@ def historia3_2_fm():
     print("Cuando se mira en el espejo, puede ver que su cuerpo ha envejecido muchísimo en esa noche.")
     time.sleep(time_duration)
     print("De esta forma, Tonaro no puede ni plantearse volver a su activa vida, viviendo en una tortura")
-    time.sleep(time_duration)
-
-def historia4_1():
-    print("Matane es una joven delicada que lleva una vida retirada en el campo")
-    time.sleep(time_duration)
-    print("<<Ojalá poder tener una vida más normal>>, piensa ella.")
-    time.sleep(time_duration)
-    print("Instantáneamente, la brujita Alva aparece en frente de la chica.")
-    time.sleep(time_duration)
-    print("Viendo que no tiene nada que perder, acepta la propuesta de la bruja.")
-    time.sleep(time_duration)
-
-def historia4_1_fb():
-    print("Matane es una joven delicada que lleva una vida retirada en el campo")
-    time.sleep(time_duration)
-    print("<<Ojalá poder tener una vida más normal>>, piensa ella.")
-    time.sleep(time_duration)
-    print("Instantáneamente, la brujita Alva aparece en frente de la chica.")
-    time.sleep(time_duration)
-    print("Viendo que no tiene nada que perder, acepta la propuesta de la bruja.")
     time.sleep(time_duration)
 
 pantalla_titulo()
